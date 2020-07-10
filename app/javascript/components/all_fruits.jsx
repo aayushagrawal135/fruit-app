@@ -3,9 +3,18 @@ import React from 'react'
 class AllFruits extends React.Component  {
 
     render() {
+        let fruits = this.props.fruits.map((fruit) => {
+            return (
+                <div key={fruit.id}>
+                    <h1>{fruit.name}</h1>
+                    <p>{fruit.description}</p>
+                </div>
+            );
+        })
+
         return (
             <div>
-                <h1>To do: List of fruits</h1>
+                {fruits}
             </div>
         );
     }
