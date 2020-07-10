@@ -1,8 +1,14 @@
 import React from 'react'
+import AllFruits from './all_fruits'
 
 class Main extends React.Component {
     render() {
-        return <h1>{this.props.title}</h1>
+        return (
+            <div>
+                <h1>{this.props.title}</h1>
+                <AllFruits />
+            </div>
+        );
     }
 }
 
