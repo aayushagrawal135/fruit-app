@@ -7,7 +7,7 @@ class AllFruits extends React.Component  {
         let fruits = this.props.fruits.map((fruit) => {
             return (
                 <div key={fruit.id}>
-                    <Fruit fruit={fruit}/>
+                    <Fruit fruit={fruit} handleDelete={this.props.handleDelete}/>
                 </div>
             );
         })
